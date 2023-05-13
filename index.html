@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Planner app</h1>
+
+      <form>
+        <label for="task-name">Task's name:</label>
+        <input type="text" id="task-name" />
+
+        <label for="type">Urgency:</label>
+        <select id="type" class="urgency">
+          <option value="urgent">Urgent</option>
+          <option value="essential">Essential</option>
+          <option value="important">Important</option>
+        </select>
+
+        <label for="to-be-done">Date to be done:</label>
+        <input type="date" id="to-be-done" />
+
+        <button>Add new Task</button>
+      </form>
+
+      <div class="lists">
+        <div class="list urgent">
+          <h1>Urgent</h1>
+        </div>
+
+        <div class="list essential">
+          <h1>Essential</h1>
+        </div>
+        <div class="list important">
+          <h1>Important</h1>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
