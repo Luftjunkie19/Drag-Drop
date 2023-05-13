@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "sans-serif";
+  background: grey;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  width: 100%;
+}
+
+.list {
+  width: 260px;
+  height: 450px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: black;
+}
+
+.list-item {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.list.urgent {
+  background: rgb(255, 0, 0);
+}
+
+.list.essential {
+  background: rgb(255, 106, 0);
+}
+
+.list.important {
+  background: rgb(255, 234, 0);
+}
+
+#task-name {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid blue;
+  font-family: inherit;
+}
+
+select {
+  font-family: inherit;
+  padding: 5px;
+  outline: 0;
+  border: none;
+  background: black;
+  color: azure;
+}
